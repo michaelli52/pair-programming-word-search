@@ -1,6 +1,6 @@
 const wordSearch = (letters, word) => {
-    const horizontalJoin = letters.map(ls => ls.join(''));
-    const horizontalBackwardsJoin = letters.map(ls => ls.reverse().join(''));
+  const horizontalJoin = letters.map(ls => ls.join(''));
+  const horizontalBackwardsJoin = letters.map(ls => ls.reverse().join(''));
   const verticalJoin = [];
   const verticalBackwardsJoin = [];
 
@@ -15,9 +15,9 @@ const wordSearch = (letters, word) => {
     verticalBackwardsJoin.push(verticalArray.reverse().join(''));
   }
 
-//   console.log('vertical', verticalJoin);
-//   console.log('horizontal backwards', horizontalBackwardsJoin);
-//   console.log('vertical backwards', verticalBackwardsJoin);
+  //   console.log('vertical', verticalJoin);
+  //   console.log('horizontal backwards', horizontalBackwardsJoin);
+  //   console.log('vertical backwards', verticalBackwardsJoin);
 
   //Search horizontally
   for (const l of horizontalJoin) {
